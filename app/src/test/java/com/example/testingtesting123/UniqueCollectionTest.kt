@@ -56,6 +56,7 @@ class UniqueCollectionTest {
         collection.remove(Item("item1"))
 
         assert(collection.size() == 1)
+        assert((collection.get(0)).name != "item1")
         assert((collection.get(0)).name == "item2")
 
         collection.remove(Item("item2"))
